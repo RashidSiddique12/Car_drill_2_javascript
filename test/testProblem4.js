@@ -8,6 +8,10 @@ const carYear = require("../problem4");
 
 const alotCarYear = carYear(inventory);
 
-alotCarYear.map((year) => {
-  console.log(year);
-});
+if (require.main === module) {
+  alotCarYear.map((year) => {
+    console.log(year);
+  });
+}
+
+module.exports = alotCarYear;
